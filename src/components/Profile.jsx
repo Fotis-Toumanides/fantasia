@@ -23,7 +23,7 @@ export default function Profile({bookDetails}) {
     useEffect(()=> {
         async function getAllBookmarks(){
             try{
-              const response = await axios.get('http://localhost:8000/bookmarks/')
+              const response = await axios.get('https://fantasiaapi.onrender.com/bookmarks/')
                 setAllBookmarks(response.data)          
             } catch(error){
               console.error('Error fetching the books:', error);
