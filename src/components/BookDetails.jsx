@@ -42,7 +42,7 @@ export default function BookDetails({bookDetails=[]}) {
         
         async function fetchBookmarks(){
             try{
-              const response = await axios.get('http://localhost:8000/bookmarks/');
+              const response = await axios.get('https://fantasiaapi.onrender.com/bookmarks/');
               const bookmarks = response.data;
                 setAllBookmarks(bookmarks);   
 // Check bookmarks for this userId ///////////////////////////////////////////////
