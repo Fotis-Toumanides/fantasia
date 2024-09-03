@@ -63,7 +63,7 @@ export default function BookDetails({bookDetails=[]}) {
             <li key={bookDetail.id} className='p-4'>
     
                     <div className="max-w-sm rounded overflow-hidden shadow-lg">                 
-                    <img src={`${bookDetail.cover}`} alt={bookDetail.title} className='w-full h-auto hover:shadow-2xl' onClick={()=> handleReadBook(bookDetail.id)}/>
+                    <img src={bookDetail.cover} alt={bookDetail.title} className='w-full h-auto hover:shadow-2xl' onClick={()=> handleReadBook(bookDetail.id)}/>
                         <div className="px-6 py-4">
                         <div className="font-bold text-xl mb-2">{bookDetail.title}</div>
                         <p className="text-gray-700 text-base">
