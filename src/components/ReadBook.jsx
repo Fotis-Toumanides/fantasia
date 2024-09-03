@@ -100,7 +100,7 @@ useEffect(() => {
 
     async function createNewBookmark() {  
         try {
-            const res = await axios.post(`http://localhost:8000/bookmarks/`, bookmarkData);
+            const res = await axios.post(`https://fotistouman.pythonanywhere.com/bookmarks/`, bookmarkData);
             readId = res.data.id;
         } catch (error) {
             console.error('Error saving the book you read:', error);
