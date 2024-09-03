@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = 'https://fantasiaapi.onrender.com/';
+const baseUrl = 'https://fotistouman.pythonanywhere.com/';
 
 const axiosInstance = axios.create({
     baseURL: baseUrl,
