@@ -91,7 +91,7 @@ useEffect(() => {
 
     async function saveBookPage() {
         try {
-            const res = await axios.put(`http://localhost:8000/bookmark/${readId}/`, bookmarkData);
+            const res = await axios.put(`https://fotistouman.pythonanywhere.com/bookmark/${readId}/`, bookmarkData);
  
         } catch (error) {
             console.error('Error saving the book page you read:', error);
