@@ -42,7 +42,7 @@ export default function BookDetails({bookDetails=[]}) {
         
         async function fetchBookmarks(){
             try{
-              const response = await axios.get('https://www.pythonanywhere.com/user/fotistouman.pythonanywhere.com/bookmarks/');
+              const response = await axios.get('https://fotistouman.pythonanywhere.com/bookmarks/');
               const bookmarks = response.data;
                 setAllBookmarks(bookmarks);   
 // Check bookmarks for this userId ///////////////////////////////////////////////
