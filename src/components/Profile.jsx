@@ -60,7 +60,7 @@ console.log(userBookmarks)
           <ul className='list-none grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4'>
           {userBookmarks.map((userRead) => {
             return (<li key={userRead.id} className='p-4'>
-            <p>{userRead.book} </p>
+           
             <div className="max-w-sm rounded overflow-hidden shadow-lg">
             <img src={bookDetails[userRead.book - 1].cover} onClick={() => handleContinueRead(userRead)}/>
             
