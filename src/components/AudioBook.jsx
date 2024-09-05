@@ -12,6 +12,7 @@ export default function AudioBook(){
     const [bookContent, setBookContent] = useState('');
     const [isLoading, setIsLoading] = useState(false);
     const [bookCover, setBookCover] = useState('./assets/');
+    const [savePhrase, setSavePhrase] = useState('');
   
     const location = useLocation(); 
     let currentCharacter;
