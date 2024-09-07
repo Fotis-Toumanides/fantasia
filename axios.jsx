@@ -4,7 +4,7 @@ const baseUrl = 'https://fantasiaapi.onrender.com/users/';
 
 const axiosInstance = axios.create({
     baseURL: baseUrl,
-    timeout: 5000,
+    timeout: 50000,
     headers: {
         'Content-Type': 'application/json',
         accept: 'application/json',
