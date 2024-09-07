@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = '/home/FotisTouman/users/';
+const baseUrl = 'https://fotistouman.pythonanywhere.com/users/';
 
 const axiosInstance = axios.create({
     baseURL: baseUrl,
