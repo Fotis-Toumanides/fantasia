@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = 'https://fantasiaapi.onrender.com/users/';
+const baseUrl = '/home/FotisTouman/fantasiaapi/users/';
 
 const axiosInstance = axios.create({
     baseURL: baseUrl,
