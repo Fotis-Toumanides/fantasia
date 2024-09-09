@@ -14,7 +14,7 @@ export default function BookDetails({bookDetails=[]}) {
 
     let tempPage =1;
     let tempReadId = 0;
-    
+//     Navigates to ReadBook component with the ID of the book the user chose to read //////
     function handleReadBook(id){
         userBookmarks.forEach(element => {
             if(element.book == id){
@@ -30,7 +30,7 @@ export default function BookDetails({bookDetails=[]}) {
             }
            })
     }
-
+//     Navigates to AudioBook component with the ID of the book the user chose to lesten to //////
     function handleAudioBook(id, cover) {
       navigate(`/audiobook/${id}`,{
         state:{
@@ -38,8 +38,8 @@ export default function BookDetails({bookDetails=[]}) {
         }}
       )
     }
+//   Fetches the bookmarks from the Django backend to check if this user is reading a book and the page he is on ///////    
     useEffect(()=> {
-        
         async function fetchBookmarks(){
             try{
               const response = await axios.get('https://fotistouman.pythonanywhere.com/bookmarks/');
