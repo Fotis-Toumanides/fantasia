@@ -17,7 +17,6 @@ export default function ReadBook() {
     const [redItId, setReaItdId] = useState();
     const [allBookmarks, setAllBookmarks] = useState([]);
     const [userBookmarks, setUserBookmarks] = useState([]);
-    /* const [saveBookmark, setSaveBookmark] = useState(false); */
     
     const userId = localStorage.getItem('userId');
     const location = useLocation();  // This takes data when ReadBook.jsx open from Profile.jsx
