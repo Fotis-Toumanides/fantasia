@@ -40,7 +40,7 @@ axiosInstance.interceptors.response.use(
     
     }
     //console.error("Error response:", error.response);
-        return Promise.reject(error);
+        //return Promise.reject(error);
 )
 
 export default axiosInstance;
