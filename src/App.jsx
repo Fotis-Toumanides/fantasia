@@ -85,7 +85,7 @@ function App() {
   useEffect(() => {
     async function fetchBooks(){
       try{
-        const response = await axios.get('https://fotistouman.pythonanywhere.com/bookdescriptions');
+        const response = await axios.get('https://fantasiaapi.onrender.com/bookdescriptions');
         setBookDescriptions(response.data);
       } catch(error){
         console.error('Error fetching the books:', error);
