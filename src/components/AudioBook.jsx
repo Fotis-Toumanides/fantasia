@@ -22,7 +22,7 @@ export default function AudioBook(){
         async function fetchBook(){
             setIsLoading(true);
             try{
-                const response = await axios.get(`https://fotistouman.pythonanywhere.com/book/${params.id}`);
+                const response = await axios.get(`https://fantasiaapi.onrender.com/book/${params.id}`);
                 setBookContent(response.data.content);
                 setBookCover(location.state.cover);
             } catch(error) {
