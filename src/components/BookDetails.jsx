@@ -58,6 +58,7 @@ export default function BookDetails({bookDetails=[]}) {
 
     return(
         <>
+            {bookdetails =[] ? <p>Loading...</p> :
         <ul className='list-none grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4'>
         {bookDetails.map((bookDetail) => (
             <li key={bookDetail.id} className='p-4'>
@@ -76,7 +77,7 @@ export default function BookDetails({bookDetails=[]}) {
 
             </li>
     ))}
-  </ul>
+  </ul>}
         </>
     )
 }
