@@ -63,7 +63,7 @@ console.log(userBookmarks)
            
             <div className="max-w-sm rounded overflow-hidden shadow-lg">
             <img src={bookDetails[userRead.book - 1].cover} onClick={() => handleContinueRead(userRead)}/>
-            
+            <p>{bookDetails[userRead.book - 1].title}</p>
           </div>  
             </li>)
           })}
