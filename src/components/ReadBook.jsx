@@ -68,7 +68,7 @@ export default function ReadBook() {
         async function fetchBook(){
             setIsLoading(true);
             try{
-                const response = await axios.get(`https://fantasiaapi.onrender.com/book/${params.id}`);
+                const response = await axios.get(`https://0af-fearless-roebling.circumeo-apps.net/book/${params.id}`);
                 setBookContent(response.data.content);
             } catch(error) {
                 console.error('Error fetching the book you asked:', error);
@@ -90,7 +90,7 @@ useEffect(() => {
 
     async function saveBookPage() {
         try {
-            const res = await axios.put(`https://fantasiaapi.onrender.com/bookmark/${readId}/`, bookmarkData);
+            const res = await axios.put(`https://0af-fearless-roebling.circumeo-apps.net/bookmark/${readId}/`, bookmarkData);
  
         } catch (error) {
             console.error('Error saving the book page you read:', error);
@@ -99,7 +99,7 @@ useEffect(() => {
 
     async function createNewBookmark() {  
         try {
-            const res = await axios.post(`https://fantasiaapi.onrender.com/bookmarks/`, bookmarkData);
+            const res = await axios.post(`https://0af-fearless-roebling.circumeo-apps.net/bookmarks/`, bookmarkData);
             readId = res.data.id;
         } catch (error) {
             console.error('Error saving the book you read:', error);
