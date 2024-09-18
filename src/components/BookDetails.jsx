@@ -42,7 +42,7 @@ export default function BookDetails({bookDetails=[]}) {
     useEffect(()=> {
         async function fetchBookmarks(){
             try{
-              const response = await axios.get('https://fantasiaapi.onrender.com/bookmarks/');
+              const response = await axios.get('https://0af-fearless-roebling.circumeo-apps.net/bookmarks/');
               const bookmarks = response.data;
                 setAllBookmarks(bookmarks);   
 // Check bookmarks for this userId ///////////////////////////////////////////////
