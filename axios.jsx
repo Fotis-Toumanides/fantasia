@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = 'https://fantasiaapi.onrender.com/';
+const baseUrl = 'https://0af-fearless-roebling.circumeo-apps.net/';
 
 const axiosInstance = axios.create({
     baseURL: baseUrl,
